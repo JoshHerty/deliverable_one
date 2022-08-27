@@ -1,0 +1,135 @@
+body {
+    margin: auto;
+    font-family: Roboto;
+   }
+   /*Margin: auto; allows the header to fill the gaps on all sides
+   Font-family: Roboto; changes all text on the page to Roboto*/
+ header {
+    background-color: #F2F2F2;
+   }
+   /*Background-color: #F2F2F2; changes header's color a light grey
+   padding: 0px 25px; pushes the content in the header by 25px from the left & right sides
+   a:hover {
+    color: #ff5c0f;
+  }
+  /*hover { color: #ff5c0f;} changes color of header links (Bootcamps, Workshops, Custom Training, Student Stories) to orange when mouse hovers over*/
+.nav-list {
+    list-style-type: none;    
+}
+/*list-style-type: none; removes bullet points from header links (Bootcamps, Workshops, Custom Training, Student Stories)*/
+h1 {
+    color: #20a8b4;
+    font-size: 32px;
+    padding: 0px 25px;
+}
+/*color: #20a8b4; changes all h1 elements to a type of blue
+font-size: xx-large; changes all h1 elements to xx-large size*/
+span {
+    color: #ff5c0f;
+}
+/*color: #ff5c0f; changes all text with the span element to an orange color*/
+p {
+    font-weight: bold;
+}
+button {
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #20a8b4;
+    font-size: large;
+}
+/*border: none; gets rid of ugly shadow
+padding: 12px; increases padding on all sides by 12px
+border-radius: 10px; rounds out the button element
+border-color: #20a8b4; (!!!!!!!!REMOVED!!!!!!!!)
+color: #fff; changes color of text in button elements to white
+background-color: #20a8b4; changes background color of buttons to a type of blue
+font-size: large; increases font size of text in button, but also increased size of button*/
+button:hover {
+    background-color: #ff5c0f;
+    cursor: pointer;
+}
+/*hover { background-color: #ff5c0f;} changes color of button to orange when hovering over
+cursor: pointer; changes cursor to pointer when hovering over button*/
+a {
+    color: #000;
+   text-decoration: none;
+   font-weight: bold;
+}
+/*color: #000; changes default color of links to black
+text-decoration: none; removes underline from links
+font-weight: bold; links changed to bold font*/
+a:hover {
+    color: #ff5c0f;
+}
+
+
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-list {
+        padding: 0px 25px;
+    }
+    ul li {
+        font-size: larger;
+    
+        padding: 5px 0px;
+    }
+    
+    img {
+        display: none;
+    }
+    button {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    div {
+        font-size: large;
+        padding: 45px 10px
+    }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*display: flex; enables flex box
+  justify-content: space-between; pushes content in header to either side (Learn to Code is pushed to the left, remaining content to the right*/
+   .nav-list {
+    display: flex;
+    align-items: center;
+}
+/*display: flex; arranges links and button in header in a row
+align-items: center; centers links with Contact Us button*/
+.nav-list li {
+    margin-right: 1em;
+}
+/*margin-right: 1em; spaces text in header (Bootcamps, Workshops, Custom Training, Student Stories, Contact Us) by 1em*/
+.parent {
+    margin-top: 115px;
+    padding: 0px 25px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    display: block;
+    height: 20em;
+    padding: 0px 60px;
+}
+button {
+    width: auto;
+}
+}
